@@ -96,3 +96,77 @@ function read_write_data(){
   output_sheet.getRange(next_row_to_write,1,data.length, data[0].length).setValues(data)
 
 }
+
+/*
+
+MOST COMMON FUNCTIONS THAT ARE USED MORE OFTEN
+push ____ add element at the end
+pop ____ remove last element --> doesn't take element, and it returns the popped element
+shift ____ remove first element --> same as pop
+unshift ____ add element at the beginning
+length ____ get length of array
+concat ____ merge 2 or more arrays --> a.concat(b, c)
+slice ____ get subset of array
+--> a.slice(3) start slicing from index 3 | a.slice(1,3) returns [a[1], a[2]]
+sort ____ sort 1D array
+--> apply the function on the array it returns none c.sort(); | it consider everything as a string
+reverse ____ reverse the array
+
+ */
+
+// IF STATEMENT
+/*
+if(condition){
+task
+}
+else if (condition){
+task
+}
+else{
+task
+}
+ */
+
+// FOR STATEMENT
+/*
+function myFunction() {
+  var t = 3;
+  for(i=0; i<=10; i++ OR i+=1 ){
+    Logger.log(t*i);
+  }
+}
+ */
+
+/*
+age	vote
+17	FALSE
+18	TRUE
+19	TRUE
+15	FALSE
+10	FALSE
+9	FALSE
+25	TRUE
+ */
+
+function myFunction() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getSheetByName("loop");
+  var data = sheet.getDataRange().getValues();
+  var dataLength = data.length;
+  Logger.log(data);
+  // row and column numbers like >> data - 1 (because of index) = sheet (natural number)
+  for (i=1;i<dataLength;i++){
+      if (data[i][0] >= 18){
+        sheet.getRange(i+1, 2).setValue('True');
+      }else{
+        sheet.getRange(i+1, 2).setValue("False");
+      }
+    }
+  }
+
+// WHILE STATEMENT
+/*
+while(condition){
+task
+}
+ */
