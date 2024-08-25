@@ -3,7 +3,7 @@ MERGE TABS
 
 A company have N number of sales people
 every each of them enters their daily summary in one tab
-we want to merge these to one master tab with date
+we want to merge these to one master tab with some extra data like 'date'
 
  */
 
