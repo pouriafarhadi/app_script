@@ -1,0 +1,14 @@
+as well as Calendar and Gmail which are apps for google
+we can connect google appscript to some other apps too which is listed below:
+
+1. Gmail
+read , write , draft , ...
+
+2. Calendar
+read , write , update , delete , ...
+
+3. Docs
+
+4. Slide
+
+
